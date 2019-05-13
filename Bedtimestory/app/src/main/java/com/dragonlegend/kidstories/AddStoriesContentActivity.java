@@ -154,7 +154,7 @@ public class AddStoriesContentActivity extends AppCompatActivity implements View
             content = mContentField.getText().toString().trim();
             String age = "1-5";
             Log.d("TAG", "age: -> " +age);
-            String author = Prefs.getString("user_profile_name", "");
+            String author = Prefs.getString("USER_NAMES", "Unknown");
             Log.d("TAG", "AddStory: " + duration);
             if (content.isEmpty()) {
                 ShowSnackbar("Content cannot be empty");
